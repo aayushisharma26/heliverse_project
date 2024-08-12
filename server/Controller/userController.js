@@ -53,10 +53,10 @@ const login = async (req, res) => {
 
 const getUserStatus = async (req, res) => {
     try {
-        const users = await User.find({}); // Use `await` to wait for the query to complete
-        res.status(200).json(users); // Send the retrieved users as a JSON response
+        const users = await User.find({}); 
+        res.status(200).json(users); 
     } catch (error) {
-        res.status(500).json({ message: "Something went wrong" }); // Handle any potential errors
+        res.status(500).json({ message: "Something went wrong" }); 
     }
 };
 
